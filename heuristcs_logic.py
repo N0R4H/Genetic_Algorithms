@@ -108,4 +108,3 @@ class ga:
                             gen = new_gen
                             epoch+=1
 
-ga('minima','logic',[0,2],15)

@@ -35,11 +35,11 @@ class ga:
                 child = []
                 p1 = bin(int(10*random.choice(gen)))
                 p2 = bin(int(10*random.choice(gen)))
-                if random.random()<1:
+                if random.random()<0.8:
                     if len(p1)>len(p2):
-                          p2+=(len(p1)-len(p2))*'0'
+                          p2+=(len(p1)-len(p2))*random.choice(['1','0'])
                     else:
-                          p1+=(len(p2)-len(p1))*'0'
+                          p1+=(len(p2)-len(p1))**random.choice(['1','0'])
                     rndpt1= random.choice(range(len(p1)))
                     rndpt2= random.choice(range(len(p2)))
 
